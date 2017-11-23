@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/user_details_banner"
+        android:scaleType="fitStart"/>
+
+    <TextView
+        android:id="@+id/namelabel"
+        android:layout_width="350dp"
+        android:layout_height="35dp"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="Enter Name"/>
+
+    <EditText
+        android:id="@+id/nameinput"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="20dp"
+        android:inputType="text"/>
+
+    <TextView
+        android:id="@+id/agelabel"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="Enter Age"/>
+
+    <EditText
+        android:id="@+id/ageinput"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="20dp"
+        android:inputType="number"/>
+
+    <TextView
+        android:id="@+id/heightlabel"
+        android:layout_width="350dp"
+        android:layout_height="35dp"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="Enter Height"/>
+
+    <EditText
+        android:id="@+id/heightinput"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="20dp"
+        android:inputType="number"/>
+
+    <TextView
+        android:id="@+id/weightlabel"
+        android:layout_width="350dp"
+        android:layout_height="35dp"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_marginLeft="20dp"
+        android:hint="In CM"
+        android:text="Enter Weight"/>
+
+    <EditText
+        android:id="@+id/weightinput"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="20dp"
+        android:inputType="number"/>
+
+    <Button
+        android:id="@+id/btnSaveDetails"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/green"
+        android:onClick="saveInfo"
+        android:text="Save Details"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+</LinearLayout>
