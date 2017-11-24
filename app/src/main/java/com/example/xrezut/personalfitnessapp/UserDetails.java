@@ -1,6 +1,7 @@
 package com.example.xrezut.personalfitnessapp;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -50,7 +51,8 @@ public class UserDetails extends AppCompatActivity {
             emptyTextFields();
             InputMethodManager imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
             imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
-            setContentView(R.layout.activity_main);
+            Intent intent = new Intent(getApplicationContext(), NavigationDrawer.class);
+            startActivity(intent);
         }
     }
 

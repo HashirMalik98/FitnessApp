@@ -38,7 +38,7 @@ public class SplashScreen extends AppCompatActivity {
         Boolean status = sharedPref.getBoolean("appAlreadyLaunched", false);
 
         if(status==true){
-            Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+            Intent intent = new Intent(getApplicationContext(), NavigationDrawer.class);
             startActivity(intent);
         }else{
             Intent intent = new Intent(getApplicationContext(), UserDetails.class);
