@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_workouts"
+            android:icon="@drawable/ic_fitness_center_black_24dp"
+            android:title="Workouts" />
+        <item
+            android:id="@+id/nav_exercises"
+            android:icon="@drawable/ic_view_headline_black_24dp"
+            android:title="Exercises" />
+        <item
+            android:id="@+id/nav_tracker"
+            android:icon="@drawable/ic_track_changes_black_24dp"
+            android:title="Development Tracker" />
+        <item
+            android:id="@+id/nav_gym"
+            android:icon="@drawable/ic_near_me_black_24dp"
+            android:title="Gym Finder" />
+        <item
+            android:id="@+id/nav_diet"
+            android:icon="@drawable/ic_restaurant_black_24dp"
+            android:title="Diet Tips" />
+    </group>
+
+    <item android:title="Other">
+        <menu>
+            <item
+                android:id="@+id/nav_settings"
+                android:icon="@drawable/ic_settings_black_24dp"
+                android:title="Settings" />
+        </menu>
+    </item>
+
+</menu>
